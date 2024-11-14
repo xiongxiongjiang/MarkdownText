@@ -28,9 +28,9 @@ public struct ParagraphMarkdownConfiguration {
     ///
     ///     content.label // maintains the default style
     ///         .lineSpacing(20)
-    let content: InlineMarkdownConfiguration
+    public let content: InlineMarkdownConfiguration
 
-    private struct Label: View {
+    struct Label: View {
         let content: InlineMarkdownConfiguration
 
         var body: some View {

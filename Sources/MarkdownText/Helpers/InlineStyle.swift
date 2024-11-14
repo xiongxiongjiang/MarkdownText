@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct InlineMarkdownConfiguration {
+public struct InlineMarkdownConfiguration {
     struct Label: View {
         @Environment(\.font) private var font
         @Environment(\.markdownStrongStyle) private var strong
@@ -9,7 +9,7 @@ struct InlineMarkdownConfiguration {
         @Environment(\.markdownInlineCodeStyle) private var code
         @Environment(\.markdownInlineLinkStyle) private var link
 
-        let elements: [MarkdownInlineElement]
+        public let elements: [MarkdownInlineElement]
 
         var body: some View {
             elements.reduce(into: Text("")) { result, component in
